@@ -1,0 +1,3 @@
+# shovel
+
+Tool for indexing data from S3 to Opensearch clusters in bulk...
