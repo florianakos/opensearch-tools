@@ -1,0 +1,7 @@
+black
+isort
+mypy
+boto3-stubs[dynamodb,s3]
+pylint
+pytest
+pytest-cov

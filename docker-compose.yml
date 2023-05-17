@@ -1,0 +1,32 @@
+version: '3.9'
+services:
+  integration_tests:
+    container_name: integration_tests
+    build: .
+    depends_on:
+      - localstack
+    links:
+      - localstack:${OPENSEARCH_DOMAIN_NAME}.${AWS_DEFAULT_REGION}.opensearch.localhost.localstack.cloud
+    environment:
+      - OPENSEARCH_ENGINE=OpenSearch_1.3
+      - OPENSEARCH_DOMAIN_NAME
+      - INDEX_NAME=shovel.index.name
+      - S3_BUCKET_NAME=random-data-bucket
+      - AWS_ENDPOINT_URL=http://localstack:4566
+      - AWS_DEFAULT_REGION
+      - AWS_ACCESS_KEY_ID=foo
+      - AWS_SECRET_ACCESS_KEY=bar
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./artifacts/component_test/:/artifacts
+
+  localstack:
+    container_name: localstack
+    image: localstack/localstack:1.3.1
+    ports:
+      - "4566:4566"
+    environment:
+      - DEBUG=${DEBUG- }
+      - AWS_DEFAULT_REGION
+    volumes:
+      - "${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack"

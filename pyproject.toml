@@ -1,0 +1,39 @@
+[tool.black]
+safe = true
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.pylint.master]
+disable = [
+  "docstring-first-line-empty",
+  "invalid-name",
+  "missing-class-docstring",
+  "missing-function-docstring",
+  "missing-module-docstring",
+  "redefined-outer-name",
+  "too-few-public-methods",
+]
+load-plugins = [
+  "pylint.extensions.code_style",
+  "pylint.extensions.docstyle",
+  "pylint.extensions.mccabe",
+  "pylint.extensions.typing",
+]
+max-args = 6
+max-attributes = 8
+max-line-length = 120
+
+[tool.pytest.ini_options]
+addopts = """\
+  --cov-report html \
+  --cov-report term-missing \
+  -W ignore::DeprecationWarning \
+  """
+junit_family = "xunit1"
+
+[tool.mypy]
+show_error_codes = true
+strict = true

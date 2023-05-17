@@ -1,0 +1,118 @@
+{
+  "format": "v1",
+  "organization": "testorg",
+  "id": "5dfbacda-6a00-11ea-86e4-0242ac120006",
+  "type": "linux_file_access",
+  "correlation_id": "bde11a39-af5e-48e8-baef-3cd44ae0000e",
+  "submission_id": 518340,
+  "transaction_id": "0000-sowdpdWdE46ilLwd",
+  "meta": {
+    "evt_es": "es01",
+    "det_es": "es02",
+    "pi": {
+      "targets": [
+        "analyze",
+        "store",
+        "index"
+      ]
+    }
+  },
+  "domain": "com.fsecure.rds",
+  "time": {
+    "received": "2020-03-19T16:40:14Z",
+    "sent": "2020-03-19T16:40:14.444353Z",
+    "created": "2020-03-19T16:40:14.442832Z",
+    "queued": "2020-03-19T16:40:14Z",
+    "var": 0,
+    "created_estim": "2020-03-19T16:40:14Z"
+  },
+  "source": {
+    "host_id": null,
+    "name": "sipp"
+  },
+  "subject": {
+    "type": "linux",
+    "sensor": {
+      "id": "ta_be_system_tests_iid_1aCc1ab",
+      "version": "TA BE System Tests Client v1"
+    },
+    "host": {
+      "fqdn": "ta.be.systemtests",
+      "id": "ta_be_system_tests_hid_aCac1cc",
+      "product": {
+        "name": "Rapid Detection Service"
+      },
+      "net_if": {
+        "if0": {
+          "addr0": {
+            "ipv4": "192.0.2.0",
+            "ipv6": "2001:4860:4860::8888"
+          }
+        }
+      }
+    },
+    "os": {
+      "kind": "linux",
+      "name": "TA BE System Tests v0",
+      "version": "10.10"
+    }
+  },
+  "event": {
+    "version": "v9",
+    "data": {
+      "process_details": {
+        "pid": "",
+        "ppid": "",
+        "sha1": "3507dc09fd879ddf4b9b94b290d5ae2257946ebc",
+        "aret": "120",
+        "arch": "s8xza8MLPPJO73",
+        "sysc": "YGqOSpnxD9nJjiia5J8N",
+        "time": "2020-03-19T16:40:14.444138Z",
+        "tty": "cwJp7gtoD1S1kER0NnF9",
+        "environ": {
+          "c4MAVJKolGP08": "aTB2tjww6KzhF"
+        },
+        "gpid": "p:80f31d12417015682d0c40f8d551d7b8539da6e0"
+      },
+      "parent_process_details": {
+        "fnam": "/pmcXwnBzAAbuaaIhDUW/utMHnD6TQMZ26DeV/CyMbWr2gdTviuiGXfcf/OXq38HyWkMUio/LLiTg6O5QZ/KLrAz8PZO8Gs",
+        "cmdl": "V6rX S5 --6nU",
+        "path": "/pmcXwnBzAAbuaaIhDUW/utMHnD6TQMZ26DeV/CyMbWr2gdTviuiGXfcf/OXq38HyWkMUio/LLiTg6O5QZ",
+        "name": "KLrAz8PZO8Gs",
+        "uid": "3950707006",
+        "uname": "",
+        "alt_users": [],
+        "gid": "763974932",
+        "gname": "",
+        "alt_groups": [],
+        "euid": "2736410068",
+        "egid": "4276389491",
+        "auid": "1104402115",
+        "pid": "",
+        "ppid": "",
+        "sha1": "3507dc09fd879ddf4b9b94b290d5ae2257946ebc",
+        "aret": "120",
+        "arch": "s8xza8MLPPJO73",
+        "sysc": "YGqOSpnxD9nJjiia5J8N",
+        "time": "2020-03-19T16:40:14.444138Z",
+        "tty": "cwJp7gtoD1S1kER0NnF9",
+        "environ": {
+          "c4MAVJKolGP08": "aTB2tjww6KzhF"
+        },
+        "gpid": "p:80f31d12417015682d0c40f8d551d7b8539da6e0"
+      },
+      "first_event_time": "2020-03-19T16:40:14.442832Z",
+      "architecture": "U4cjnTrSNHKZvzcy5",
+      "file_full_path": "8658ejnjn4nKp",
+      "current_working_dir": "/5OkCyHHNCnVPd/9dVwaPG7uwxibP/S1E1j3xbTHjcqCZbP",
+      "access_mode": "DELETE",
+      "access_return_code": "227",
+      "access_system_call": "A5vX3KIZQYurh3zc",
+      "sha1": "0035edda560216b7458c84dce46cafffb9229da4",
+      "ephash": "d9706948a65ef2f1"
+    }
+  },
+  "tags": {
+    "qa_ta": "be_system_tests"
+  }
+}
